@@ -34,19 +34,6 @@ const NoteState = (props) => {
     });
 
     const note = await response.json()
-    // console.log(json)
-
-
-    console.log("Adding a new Note")
-    // const note = {
-    //   "_id": "65e37be8721dea713ca11adgbhffh76",
-    //   "user": "65e0c46c6b3b505c999c53fb",
-    //   "title": title,
-    //   "description": description,
-    //   "tag": tag,
-    //   "date": "2024-03-02T19:20:08.255Z",
-    //   "__v": 0
-    // }
     setNotes(notes.concat(note))
   }
 
@@ -61,14 +48,12 @@ const NoteState = (props) => {
       }
     });
     const json = await response.json()
-    console.log(json)
 
     const newNotes = notes.filter((n) => n._id !== id)
-    console.log("Deleting note with id " + id)
     setNotes(newNotes)
   }
 
-  
+
   const editNote = async (id, title, description, tag) => {
     // API Call 
     const response = await fetch(`${host}/api/notes/updatenote/${id}`, {
