@@ -9,6 +9,8 @@ import Home from './Components/Home';
 import About from './Components/About';
 import NoteState from './Context/Notes/NoteState';
 import Alert from './Components/Alert';
+import Login from './Components/Login';
+import SignUp from './Components/SignUp';
 
 
 function App() {
@@ -25,6 +27,12 @@ function App() {
               </Route>
               <Route exact path="/about">
                 <About />
+              </Route>
+              <Route exact path="/login">
+                <Login/>
+              </Route>
+              <Route exact path="/signup">
+                <SignUp/>
               </Route>
             </Switch>
           </div>
