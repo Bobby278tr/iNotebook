@@ -1,4 +1,11 @@
-# Getting Started with Create React App
+# iNotebook
+
+iNotebook is an app where we can store one's notes  in a notebook. It allows users to create , edit and delete pages within their notebooks. Each user will create there own account using there personal email ID and password. Which protect the notes to been seen by other without proper credentials for login.
+
+# Demo Of The Project
+<img src="DemoVideo\Demo_iNotebook.mp4" alt="Demo of the project"/>
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
